@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Danilo Santana | Fonoaudiólogo e Aparelhos Auditivos | Jardim Paulista, SP</title>
+<meta name="description" content="Reabilitação auditiva e aparelhos auditivos com avaliação individual. Danilo Santana, fonoaudiólogo, mestre pela Santa Casa SP e especialista em Audiologia. Alameda Jaú, 72, Jardim Paulista.">
+<meta name="theme-color" content="#1c2826">
+<meta property="og:title" content="Danilo Santana | Fonoaudiólogo">
+<meta property="og:description" content="Audição, cognição e autonomia. Reabilitação auditiva e aparelhos auditivos em São Paulo.">
+<meta property="og:image" content="img/og.jpg">
+<link rel="icon" href="img/mark-dark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=2">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MedicalBusiness","name":"Fonoaudiólogo Danilo Santana","medicalSpecialty":"Audiology","image":"img/danilo.webp","telephone":"+55-11-97105-4861","address":{"@type":"PostalAddress","streetAddress":"Alameda Jaú, 72, Conj. 23","addressLocality":"São Paulo","addressRegion":"SP","postalCode":"01420-000","addressCountry":"BR"},"geo":{"@type":"GeoCoordinates","latitude":-23.5687659,"longitude":-46.6510542},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"12"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Friday"],"opens":"14:00","closes":"18:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Thursday"],"opens":"09:00","closes":"18:00"}],"sameAs":["https://www.instagram.com/fonodanilosantana/","https://www.facebook.com/fonodanilosantana"]}
+</script>
+</head>
+<body>
+
+<!-- INTRO: audiometria -->
+<div class="intro" id="intro" aria-hidden="true">
+  <div class="intro__grid">
+    <img class="intro__mark" src="img/mark-light.png" alt="">
+    <div class="intro__freqs">
+      <span>250</span><span>500</span><span>1k</span><span>2k</span><span>4k</span><span>8k</span>
+    </div>
+    <svg class="intro__wave" viewBox="0 0 600 80" preserveAspectRatio="none"><path id="introWave" d=""/></svg>
+    <p class="intro__label">calibrando <b id="introHz">250</b> Hz</p>
+  </div>
+  <button class="intro__skip" type="button">pular</button>
+</div>
+
+<header class="nav" id="nav">
+  <a class="nav__logo" href="#topo" aria-label="Danilo Santana, fonoaudiólogo">
+    <img class="logo-l" src="img/logo-light.png" alt="Danilo Santana fonoaudiólogo" width="870" height="307">
+    <img class="logo-d" src="img/logo-dark.png" alt="" width="870" height="307">
+  </a>
+  <nav class="nav__links" id="menu">
+    <a href="#simulador">Simulador</a>
+    <a href="#processo">Processo</a>
+    <a href="#solucoes">Soluções</a>
+    <a href="#musicos">Músicos</a>
+    <a href="#formacao">Formação</a>
+    <a href="#consultorio">Consultório</a>
+  </nav>
+  <a class="btn btn--sm nav__cta" href="#agendar">Agendar</a>
+  <button class="nav__burger" id="burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+</header>
+
+<main id="topo">
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero__sticky">
+    <canvas class="hero__rings" id="rings"></canvas>
+    <div class="hero__word" aria-hidden="true"><span>OUVIR</span></div>
+    <div class="hero__figure" id="figure">
+      <img src="img/danilo.webp" alt="Danilo Santana, fonoaudiólogo, de jaleco no consultório" width="1200" height="1795" fetchpriority="high">
+    </div>
+    <div class="hero__copy">
+      <p class="eyebrow"><span class="dot"></span> Fonoaudiólogo · Aparelhos auditivos</p>
+      <h1 class="hero__title">
+        <span class="line"><span>Audição,</span></span>
+        <span class="line"><span>cognição</span></span>
+        <span class="line"><span><em>e autonomia.</em></span></span>
+      </h1>
+      <p class="hero__lead">Reabilitação auditiva e aparelhos auditivos com avaliação individual, no Jardim Paulista.</p>
+      <div class="hero__ctas">
+        <a class="btn" href="#agendar">Agendar avaliação</a>
+        <a class="btn btn--ghost" href="#simulador"><i class="play"></i> Ouça a diferença</a>
+      </div>
+    </div>
+    <ul class="hero__chips">
+      <li><b>Mestre</b> Santa Casa SP</li>
+      <li><b>CRFa</b> 2-18375</li>
+      <li><b>5,0</b> ★★★★★ Google</li>
+    </ul>
+    <div class="hero__scroll"><span></span>role</div>
+  </div>
+</section>
+
+<!-- MANIFESTO -->
+<section class="manifesto" id="manifesto">
+  <p class="manifesto__kicker">O que ninguém te conta</p>
+  <p class="manifesto__text" data-words>Perda auditiva não tratada não impacta só a audição. Ela reduz estímulo cerebral. Não é sobre escutar menos. É sobre o cérebro deixar de processar informação. Por isso, tratar cedo não é estética. <strong>É preservação.</strong></p>
+</section>
+
+<!-- SIMULADOR -->
+<section class="sim" id="simulador">
+  <div class="wrap sim__grid">
+    <div class="sim__intro">
+      <p class="eyebrow eyebrow--dark">Simulador</p>
+      <h2 class="h2">Ouça como uma perda auditiva <em>apaga</em> a fala.</h2>
+      <p class="lead">Aperte o play e arraste o controle. É a voz do Danilo, filtrada do jeito que uma pessoa com perda auditiva escuta: os agudos somem primeiro, e são eles que separam um "faca" de um "vaca".</p>
+      <p class="fine">Simulação ilustrativa, não substitui a audiometria. Use fones de ouvido para sentir melhor.</p>
+    </div>
+
+    <div class="sim__panel" id="simPanel">
+      <div class="sim__top">
+        <button class="sim__play" id="simPlay" aria-label="Tocar a voz do Danilo"><i class="play"></i><i class="pause"></i></button>
+        <div class="sim__status">
+          <span class="sim__level" id="simLevel">Audição normal</span>
+          <span class="sim__desc" id="simDesc">Você ouve a fala inteira, com consoantes nítidas.</span>
+        </div>
+      </div>
+
+      <div class="audiogram">
+        <svg viewBox="0 0 600 330" id="audiogram" aria-label="Audiograma com o limiar de audição">
+          <defs>
+            <linearGradient id="lossFill" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#779c94" stop-opacity=".0"/>
+              <stop offset="1" stop-color="#779c94" stop-opacity=".35"/>
+            </linearGradient>
+          </defs>
+          <g class="ag-grid" id="agGrid"></g>
+          <path class="ag-banana" d="M120 118 C 190 80, 300 78, 360 92 C 430 108, 480 140, 520 170 C 470 205, 400 214, 330 200 C 250 190, 170 170, 120 150 Z"/>
+          <text class="ag-banana-label" x="300" y="152">banana da fala</text>
+          <path class="ag-area" id="agArea" d=""/>
+          <path class="ag-line" id="agLine" d=""/>
+          <g id="agDots"></g>
+        </svg>
+        <div class="ag-axis"><span>grave</span><span>frequência (Hz)</span><span>agudo</span></div>
+      </div>
+
+      <div class="sim__control">
+        <input type="range" id="simRange" min="0" max="3" step="0.01" value="0" aria-label="Grau de perda auditiva">
+        <div class="sim__ticks"><button data-v="0">Normal</button><button data-v="1">Leve</button><button data-v="2">Moderada</button><button data-v="3">Severa</button></div>
+      </div>
+
+      <canvas class="sim__spectrum" id="spectrum" height="90"></canvas>
+      <p class="sim__caption" id="simCaption">"Perda auditiva não se resolve em minutos. Não é só olhar um exame e indicar um aparelho."</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESSO -->
+<section class="process" id="processo">
+  <div class="process__media">
+    <div class="process__sticky">
+      <div class="process__frame">
+        <video src="media/ear.mp4" poster="img/ear.jpg" muted loop playsinline preload="metadata" id="earVid" data-auto></video>
+        <div class="process__ring"></div>
+      </div>
+      <div class="process__counter"><b id="stepNum">01</b><span>/04</span></div>
+    </div>
+  </div>
+  <div class="process__steps">
+    <header class="process__head">
+      <p class="eyebrow eyebrow--dark">Como funciona</p>
+      <h2 class="h2">Não é só olhar um exame e indicar um aparelho.</h2>
+    </header>
+    <article class="step" data-step="1">
+      <span class="step__n">01</span>
+      <h3>Avaliação completa e minuciosa</h3>
+      <p>Audiometria e conversa sem pressa. Perda auditiva se entende pela rotina, pelo ambiente, pela expectativa e pelo comportamento de cada pessoa. Cada detalhe influencia no resultado.</p>
+      <p class="step__quote">"Uma avaliação superficial quase sempre leva a uma solução superficial."</p>
+    </article>
+    <article class="step" data-step="2">
+      <span class="step__n">02</span>
+      <h3>Indicação com clareza</h3>
+      <p>Quanto mais caro, melhor? Na prática, não funciona assim. Cada tipo de perda exige uma abordagem diferente, e nem sempre o mais avançado é o mais adequado.</p>
+      <p class="step__quote">"A decisão deixa de ser emocional e passa a ser estratégica."</p>
+    </article>
+    <article class="step" data-step="3">
+      <span class="step__n">03</span>
+      <h3>Adaptação progressiva</h3>
+      <p>Muita gente abandona o aparelho nos primeiros dias. Não é falta de disciplina, é erro no processo. O cérebro precisa reaprender a ouvir, e isso acontece aos poucos, com teste no dia a dia.</p>
+      <p class="step__quote">"Adaptação não é imediata. É progressiva."</p>
+    </article>
+    <article class="step" data-step="4">
+      <span class="step__n">04</span>
+      <h3>Ajustes e acompanhamento</h3>
+      <p>Regulagens finas, retornos e orientação até o aparelho deixar de ser um acessório e passar a fazer parte da sua vida.</p>
+      <p class="step__quote">"Quando bem indicada e ajustada, a tecnologia passa a fazer parte da sua vida."</p>
+    </article>
+  </div>
+</section>
+
+<!-- SOLUÇÕES -->
+<section class="solutions" id="solucoes">
+  <div class="wrap">
+    <p class="eyebrow">Soluções auditivas</p>
+    <h2 class="h2 h2--light">Esqueça aquele aparelho grande e aparente.</h2>
+    <p class="lead lead--light">Hoje eles são discretos, recarregáveis, reduzem ruído, focam na fala e se conectam direto ao celular. O ponto mais importante não é a tecnologia: é como ela é aplicada.</p>
+
+    <div class="sol" id="solList">
+      <button class="sol__item is-open" type="button">
+        <span class="sol__n">01</span><span class="sol__t">Aparelhos auditivos</span><span class="sol__plus"></span>
+        <span class="sol__body">Seleção e adaptação de aparelhos auditivos, com teste domiciliar antes da decisão de compra. A experiência no dia a dia é fundamental pra escolher certo.</span>
+      </button>
+      <button class="sol__item" type="button">
+        <span class="sol__n">02</span><span class="sol__t">Audiometria</span><span class="sol__plus"></span>
+        <span class="sol__body">O exame que mede seus limiares de audição em cada frequência. É o ponto de partida de qualquer reabilitação, e um bom hábito pra quem convive com som alto.</span>
+      </button>
+      <button class="sol__item" type="button">
+        <span class="sol__n">03</span><span class="sol__t">BAHA · implante de condução óssea</span><span class="sol__plus"></span>
+        <span class="sol__body">Prótese auditiva implantável que transmite o som por vibração no osso, estimulando a cóclea direto, sem passar pela condução aérea. Indicada em casos específicos, junto com o otorrino.</span>
+      </button>
+      <button class="sol__item" type="button">
+        <span class="sol__n">04</span><span class="sol__t">Surdez em um ouvido só</span><span class="sol__plus"></span>
+        <span class="sol__body">Para a surdez unilateral existem caminhos como o sistema CROS (não cirúrgico), que leva o som do lado sem audição para o lado bom via wireless, além do BAHA e do implante coclear.</span>
+      </button>
+      <button class="sol__item" type="button">
+        <span class="sol__n">05</span><span class="sol__t">Pré-molde para fones in-ear</span><span class="sol__plus"></span>
+        <span class="sol__body">Moldagem do canal auditivo para fones de retorno sob medida. Saúde auditiva de músicos e cantores, no palco e no estúdio.</span>
+      </button>
+      <button class="sol__item" type="button">
+        <span class="sol__n">06</span><span class="sol__t">Ajustes de aparelhos</span><span class="sol__plus"></span>
+        <span class="sol__body">Já usa aparelho e ele incomoda, apita ou não te ajuda em restaurante? Muitas vezes o problema está na regulagem, não no equipamento.</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- MÚSICOS -->
+<section class="musicians" id="musicos">
+  <div class="musicians__pin">
+    <header class="musicians__head">
+      <p class="eyebrow">Saúde auditiva de músicos</p>
+      <h2 class="h2 h2--light">Quem vive do som<br>confia o ouvido a ele.</h2>
+    </header>
+    <div class="musicians__track" id="track">
+      <figure class="card">
+        <div class="card__img"><img src="img/gil.webp" alt="Danilo Santana com Gilberto Gil no consultório" loading="lazy"></div>
+        <figcaption><b>Gilberto Gil</b><span>"Hoje foi dia de cuidar da saúde auditiva dessa grande lenda da música brasileira."</span></figcaption>
+      </figure>
+      <figure class="card">
+        <div class="card__img"><img src="img/paulinho.webp" alt="Danilo Santana com Paulinho, do Roupa Nova" loading="lazy"></div>
+        <figcaption><b>Paulinho · Roupa Nova</b><span>Pré-molde das orelhas para os in-ears da Xtreme Ears.</span></figcaption>
+      </figure>
+      <figure class="card">
+        <div class="card__img"><img src="img/serginho.webp" alt="Danilo Santana com Serginho, do Roupa Nova" loading="lazy"></div>
+        <figcaption><b>Serginho · Roupa Nova</b><span>"Tive o prazer de atender o grande Serginho, muito querido e simpático."</span></figcaption>
+      </figure>
+      <figure class="card card--wide">
+        <div class="card__img"><img src="img/benito.webp" alt="Danilo Santana com Benito di Paula no consultório" loading="lazy"></div>
+        <figcaption><b>Benito di Paula <i>in memoriam</i></b><span>"Guardarei comigo a lembrança de seu carisma e o privilégio de ter zelado por sua saúde auditiva."</span></figcaption>
+      </figure>
+      <div class="card card--note">
+        <p>Fone de retorno, ensaio, show, estúdio. Exposição a som alto pede <em>conservação auditiva</em> e um molde que veda de verdade.</p>
+        <a class="btn btn--light" href="#agendar" data-pre="musico">Sou músico</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REELS -->
+<section class="reels" id="reels">
+  <div class="wrap">
+    <p class="eyebrow eyebrow--dark">Do Instagram</p>
+    <h2 class="h2">Mitos que fazem a pessoa adiar o tratamento.</h2>
+    <div class="reels__row">
+      <article class="reel" data-src="media/caro.mp4">
+        <div class="reel__phone"><video poster="media/caro.jpg" playsinline preload="none"></video><button class="reel__btn" aria-label="Assistir"><i class="play"></i></button></div>
+        <h3>"Quanto mais caro, melhor."</h3>
+      </article>
+      <article class="reel" data-src="media/tecnologia.mp4">
+        <div class="reel__phone"><video poster="media/tecnologia.jpg" playsinline preload="none"></video><button class="reel__btn" aria-label="Assistir"><i class="play"></i></button></div>
+        <h3>"Aparelho é aquele grande e aparente."</h3>
+      </article>
+      <article class="reel" data-src="media/adaptacao.mp4">
+        <div class="reel__phone"><video poster="media/adaptacao.jpg" playsinline preload="none"></video><button class="reel__btn" aria-label="Assistir"><i class="play"></i></button></div>
+        <h3>"Desisti, não me adaptei."</h3>
+      </article>
+      <article class="reel" data-src="media/cerebro.mp4">
+        <div class="reel__phone"><video poster="media/cerebro.jpg" playsinline preload="none"></video><button class="reel__btn" aria-label="Assistir"><i class="play"></i></button></div>
+        <h3>"É só escutar um pouco menos."</h3>
+      </article>
+      <article class="reel" data-src="media/avaliacao.mp4">
+        <div class="reel__phone"><video poster="media/avaliacao.jpg" playsinline preload="none"></video><button class="reel__btn" aria-label="Assistir"><i class="play"></i></button></div>
+        <h3>"Resolve numa consulta rápida."</h3>
+      </article>
+    </div>
+    <a class="link-arrow" href="https://www.instagram.com/fonodanilosantana/" target="_blank" rel="noopener">@fonodanilosantana no Instagram</a>
+  </div>
+</section>
+
+<!-- FORMAÇÃO -->
+<section class="edu" id="formacao">
+  <div class="wrap edu__grid">
+    <div class="edu__media">
+      <video src="media/santacasa.mp4" poster="media/santacasa.jpg" muted loop playsinline preload="none" data-auto></video>
+      <p class="edu__cap">Oficina de pré-moldes com os alunos do 3º ano de Fonoaudiologia da Santa Casa. "Retornar à Santa Casa é sempre um momento especial."</p>
+    </div>
+    <div>
+      <p class="eyebrow eyebrow--dark">Formação</p>
+      <h2 class="h2">Mestre pela Santa Casa. Especialista em Audiologia.</h2>
+      <ol class="timeline">
+        <li><span>Graduação</span><b>Fonoaudiologia</b><i>Centro Universitário FMU</i></li>
+        <li><span>Aperfeiçoamento</span><b>Dispositivos Eletrônicos de Amplificação</b><i>CEDIAU · Centro de Estudos dos Distúrbios da Audição</i></li>
+        <li><span>Título de especialista</span><b>Audiologia</b><i>Conselho Federal de Fonoaudiologia</i></li>
+        <li><span>Mestrado</span><b>Saúde da Comunicação Humana</b><i>Faculdade de Ciências Médicas da Santa Casa de São Paulo</i></li>
+      </ol>
+      <p class="edu__note">Ênfase em reabilitação auditiva, seleção e adaptação de aparelhos auditivos, BAHA e saúde auditiva de músicos. Atendimento em português e inglês.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="reviews" id="avaliacoes">
+  <div class="wrap reviews__head">
+    <div class="score"><b>5,0</b><span>★★★★★</span><i>12 avaliações no Google</i></div>
+    <div class="score"><b>14</b><span>opiniões</span><i>verificadas no Doctoralia</i></div>
+    <h2 class="h2">"Me devolveu a alegria de viver melhor."</h2>
+  </div>
+  <div class="marquee"><div class="marquee__track" id="marquee">
+    <blockquote><p>Excelente profissional, super comprometido com o bem estar dos seus pacientes. Me devolveu a alegria de viver melhor.</p><cite>Selma Seixas · Google</cite></blockquote>
+    <blockquote><p>Muito paciente, sempre disposto a tirar qualquer dúvida. Seu foco é oferecer o melhor aparelho do mercado ao cliente.</p><cite>Amely Guedes Vintena · Google</cite></blockquote>
+    <blockquote><p>Atencioso, conhecedor, sabe como orientar. Um excelente profissional.</p><cite>Laerte P. Silva · Doctoralia</cite></blockquote>
+    <blockquote><p>Estou imensamente satisfeito com o atendimento e o resultado do trabalho.</p><cite>Gil Souza · Google</cite></blockquote>
+    <blockquote><p>Ambiente organizado e tranquilo. Me atendeu com muita atenção, explicando todo o procedimento.</p><cite>Elisio Neto · Doctoralia</cite></blockquote>
+    <blockquote><p>A dedicação e atenção aos clientes é o seu principal destaque.</p><cite>Jose Orvat · Google</cite></blockquote>
+    <blockquote><p>Profissional atencioso e muito cuidadoso com os procedimentos.</p><cite>Wilson de Góes Junior · Doctoralia</cite></blockquote>
+    <blockquote><p>Atendimento impecável e ambiente super agradável!</p><cite>Jefferson Feitosa · Google</cite></blockquote>
+  </div></div>
+</section>
+
+<!-- AGENDAR -->
+<section class="book" id="agendar">
+  <div class="wrap book__grid">
+    <div class="book__copy">
+      <p class="eyebrow">Avaliação individual</p>
+      <h2 class="h2 h2--light">Conta pra gente o que você está percebendo.</h2>
+      <p class="lead lead--light">Marque as opções e a mensagem já sai pronta no WhatsApp do consultório.</p>
+      <div class="book__preview">
+        <span class="book__wa">WhatsApp · (11) 97105-4861</span>
+        <p id="waPreview"></p>
+      </div>
+    </div>
+    <form class="book__form" id="bookForm">
+      <fieldset>
+        <legend>A consulta é para</legend>
+        <div class="pills" data-name="quem" data-single>
+          <button type="button" class="is-on">mim</button><button type="button">um familiar</button>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>O que você percebe</legend>
+        <div class="pills" data-name="sinais">
+          <button type="button">dificuldade em conversas e restaurantes</button>
+          <button type="button">TV e celular cada vez mais altos</button>
+          <button type="button">pedir pra repetir</button>
+          <button type="button">zumbido</button>
+          <button type="button">não ouço de um lado</button>
+          <button type="button">já uso aparelho e quero ajustar</button>
+          <button type="button" data-key="musico">sou músico, quero molde para in-ear</button>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Já fez audiometria?</legend>
+        <div class="pills" data-name="exame" data-single>
+          <button type="button">sim, recente</button><button type="button">faz tempo</button><button type="button">nunca fiz</button>
+        </div>
+      </fieldset>
+      <label class="field"><span>Seu nome</span><input type="text" id="nome" autocomplete="given-name" placeholder="Como podemos te chamar?"></label>
+      <button class="btn btn--big" type="submit">Enviar no WhatsApp</button>
+      <p class="fine fine--light">Atendimento particular. Abre o WhatsApp com a mensagem pronta, você revisa antes de enviar.</p>
+    </form>
+  </div>
+</section>
+
+<!-- CONSULTÓRIO -->
+<section class="place" id="consultorio">
+  <div class="place__photo"><img src="img/predio.webp" alt="Fachada do prédio na Alameda Jaú, 72" loading="lazy"></div>
+  <div class="place__info">
+    <p class="eyebrow eyebrow--dark">Consultório</p>
+    <h2 class="h2">Alameda Jaú, 72<br><span>Conj. 23 · Jardim Paulista</span></h2>
+    <p class="place__sub">A poucos passos da Avenida Paulista. São Paulo, SP, 01420-000. Entrada com acessibilidade.</p>
+    <div class="status" id="status"><span class="status__dot"></span><span id="statusTxt">Verificando horário…</span></div>
+    <ul class="hours" id="hours">
+      <li data-d="1"><span>Segunda</span><b>14h às 18h</b></li>
+      <li data-d="2"><span>Terça</span><b>9h às 18h</b></li>
+      <li data-d="3"><span>Quarta</span><b>fechado</b></li>
+      <li data-d="4"><span>Quinta</span><b>9h às 18h</b></li>
+      <li data-d="5"><span>Sexta</span><b>14h às 18h</b></li>
+      <li data-d="6"><span>Sábado e domingo</span><b>fechado</b></li>
+    </ul>
+    <div class="place__ctas">
+      <a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=Alameda+Ja%C3%BA+72+Jardim+Paulista+S%C3%A3o+Paulo" target="_blank" rel="noopener">Como chegar</a>
+      <a class="btn btn--ghost-dark" href="tel:+5511971054861">(11) 97105-4861</a>
+    </div>
+  </div>
+  <div class="place__map">
+    <iframe title="Mapa do consultório" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Fonoaudi%C3%B3logo%20Danilo%20Santana%2C%20Alameda%20Ja%C3%BA%2072&z=16&output=embed"></iframe>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <img class="foot__logo" src="img/logo-light.png" alt="Danilo Santana fonoaudiólogo" width="870" height="307" loading="lazy">
+  <div class="foot__cols">
+    <p>Fonoaudiólogo · CRFa 2-18375<br>Mestre em Saúde da Comunicação Humana (FCMSCSP)<br>Especialista em Audiologia (CFFa)</p>
+    <p>Alameda Jaú, 72, Conj. 23<br>Jardim Paulista, São Paulo, SP</p>
+    <p><a href="https://wa.me/5511971054861" target="_blank" rel="noopener">WhatsApp</a><br><a href="https://www.instagram.com/fonodanilosantana/" target="_blank" rel="noopener">Instagram</a><br><a href="https://www.facebook.com/fonodanilosantana" target="_blank" rel="noopener">Facebook</a></p>
+  </div>
+  <p class="foot__fine">As informações deste site são educativas e não substituem a avaliação de um profissional.</p>
+</footer>
+
+<a class="wa-float" href="#agendar" aria-label="Agendar pelo WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-2.1 0-4.1-.6-5.9-1.6l-.4-.3-3.8 1.2 1.2-3.7-.3-.4a10.4 10.4 0 0 1-1.7-5.8C5.1 9.9 10 5.2 16 5.2s10.9 4.7 10.9 10.6S22 26.4 16 26.4zm6-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6.3-.5c.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.7s1.2 3.2 1.3 3.4c.2.2 2.3 3.5 5.6 4.9 2.8 1.1 3.3.9 4 .8.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
+</a>
+
+<script src="main.js?v=2"></script>
+</body>
+</html>

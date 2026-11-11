@@ -415,3 +415,5 @@ html,body{touch-action:pan-x pan-y}
 .format:nth-child(1) .format__art img,.format:nth-child(2) .format__art img{scale:1.08}
 .format:nth-child(3) .format__art img{scale:1.75}
 .format:nth-child(4) .format__art img{scale:1.6}
+.format:nth-child(3) .format__art img{scale:1.05}
+.perks__colors{max-width:260px}

@@ -377,7 +377,7 @@
     e.preventDefault();
     window.open(`https://wa.me/${WA}?text=${encodeURIComponent(buildMsg())}`, '_blank', 'noopener');
   });
-  ['musico', 'barani'].forEach(k => $$('[data-pre="' + k + '"]').forEach(a => a.addEventListener('click', () => {
+  ['musico', 'boreal'].forEach(k => $$('[data-pre="' + k + '"]').forEach(a => a.addEventListener('click', () => {
     const b = $('[data-key="' + k + '"]', form); if (b && !b.classList.contains('is-on')) { b.classList.add('is-on'); buildMsg(); }
   })));
   waFloat.addEventListener('click', e => {

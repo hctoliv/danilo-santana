@@ -134,7 +134,7 @@
   };
 
   /* ---------- PROCESS steps ---------- */
-  const steps = $$('.step'), stepNum = $('#stepNum');
+  const steps = $$('.step'), stepNum = $('#stepNum'), procImgs = $$('.process__img');
 
   /* ---------- SCROLL LOOP ---------- */
   const waFloat = $('.wa-float'), book = $('#agendar'), simPanelEl = $('#simPanel');
@@ -174,6 +174,7 @@
     let active = 0;
     steps.forEach((s, i) => { const r = s.getBoundingClientRect(); if (r.top < vh * .6) active = i; });
     steps.forEach((s, i) => s.classList.toggle('on', i === active));
+    procImgs.forEach((im, i) => im.classList.toggle('on', i === active));
     stepNum.textContent = String(active + 1).padStart(2, '0');
     // float
     const br = book.getBoundingClientRect();

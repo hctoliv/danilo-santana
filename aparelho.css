@@ -98,3 +98,7 @@ em{color:#527870}
 .choose__cta .fine{color:rgba(244,241,234,.68)}
 .foot__cols a{display:inline-block;padding:5px 0;margin:1px 0}
 .foot__cols p{line-height:1.9}
+
+/* consultório: aviso de horário agendado */
+.appt{display:inline-flex;align-items:center;gap:10px;padding:10px 18px;border-radius:999px;background:var(--cream);font-weight:500;margin-bottom:30px}
+.appt__dot{width:8px;height:8px;border-radius:50%;background:var(--teal)}

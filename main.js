@@ -384,34 +384,6 @@
   })));
   // botão flutuante "Fale comigo" vai direto para o WhatsApp (href no HTML)
 
-  /* ---------- OPEN / CLOSED (horário de São Paulo) ---------- */
-  const HOURS = { 1: [14, 18], 2: [9, 18], 3: null, 4: [9, 18], 5: [14, 18], 6: null, 0: null };
-  const NAMES = ['domingo', 'segunda', 'terça', 'quarta', 'quinta', 'sexta', 'sábado'];
-  const spNow = () => {
-    const p = new Intl.DateTimeFormat('en-US', { timeZone: 'America/Sao_Paulo', weekday: 'short', hour: 'numeric', minute: 'numeric', hour12: false }).formatToParts(new Date());
-    const wd = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].indexOf(p.find(x => x.type === 'weekday').value);
-    const h = +p.find(x => x.type === 'hour').value % 24, m = +p.find(x => x.type === 'minute').value;
-    return { wd, t: h + m / 60 };
-  };
-  const status = () => {
-    const { wd, t } = spNow();
-    const st = $('#status'), tx = $('#statusTxt');
-    $$('#hours li').forEach(li => li.classList.toggle('today', +li.dataset.d === wd || (li.dataset.d === '6' && (wd === 6 || wd === 0))));
-    const today = HOURS[wd];
-    if (today && t >= today[0] && t < today[1]) {
-      st.classList.add('open'); tx.textContent = `Aberto agora · fecha às ${today[1]}h`;
-      return;
-    }
-    st.classList.remove('open');
-    for (let k = 0; k < 8; k++) {
-      const d = (wd + k) % 7, hrs = HOURS[d];
-      if (!hrs) continue;
-      if (k === 0 && t >= hrs[0]) continue;
-      tx.textContent = `Fechado agora · abre ${k === 0 ? 'hoje' : k === 1 ? 'amanhã' : NAMES[d]} às ${hrs[0]}h`;
-      return;
-    }
-  };
-  status(); setInterval(status, 60000);
 })();
 
 /* sem zoom no mobile (iOS ignora user-scalable=no) */

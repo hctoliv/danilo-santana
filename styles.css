@@ -406,3 +406,12 @@ html,body{touch-action:pan-x pan-y}
   .choose{border-radius:24px}
   .choose__cta .btn{width:100%;justify-content:center}
 }
+
+/* fotos oficiais Barani */
+.format__art img{width:84%;height:84%;object-fit:contain;position:relative;z-index:1;filter:drop-shadow(0 18px 22px rgba(28,40,38,.18));transition:transform .6s var(--ease)}
+.format:hover .format__art img{transform:scale(1.05) rotate(-2deg)}
+.perks__colors{display:block;width:100%;max-width:220px;height:auto;margin-top:16px;mix-blend-mode:multiply}
+.format__art img{width:100%;height:100%}
+.format:nth-child(1) .format__art img,.format:nth-child(2) .format__art img{scale:1.08}
+.format:nth-child(3) .format__art img{scale:1.75}
+.format:nth-child(4) .format__art img{scale:1.6}

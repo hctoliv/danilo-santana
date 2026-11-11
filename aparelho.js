@@ -2,7 +2,7 @@
 (() => {
   const $ = (s, c = document) => c.querySelector(s), $$ = (s, c = document) => [...c.querySelectorAll(s)];
   const WA = '5511971054861';
-  const MODEL = document.body.dataset.model || 'Danavox Boreal';
+  const MODEL = document.body.dataset.model || 'GN Danavox';
   const isMobile = () => matchMedia('(max-width:760px)').matches;
 
   // menu

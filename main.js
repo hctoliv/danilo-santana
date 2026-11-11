@@ -366,7 +366,7 @@
     const sinais = picked('sinais');
     const exame = picked('exame')[0];
     const soMusico = sinais.length === 1 && /músico/.test(sinais[0]);
-    let m = `Olá, Danilo! ${n ? 'Meu nome é ' + n + '. ' : ''}${soMusico ? 'Gostaria de agendar um horário' : 'Gostaria de agendar um teste com o aparelho auditivo Danavox Boreal'} ${quem === 'mim' ? 'para mim' : 'para um familiar'}.`;
+    let m = `Olá, Danilo! ${n ? 'Meu nome é ' + n + '. ' : ''}${soMusico ? 'Gostaria de agendar um horário' : 'Gostaria de agendar um teste com o aparelho auditivo GN Danavox'} ${quem === 'mim' ? 'para mim' : 'para um familiar'}.`;
     if (sinais.length) m += `\n\nO que tenho percebido: ${sinais.join(', ')}.`;
     if (exame) m += `\nAudiometria: ${exame}.`;
     m += `\n\nQuais horários você tem disponíveis?`;

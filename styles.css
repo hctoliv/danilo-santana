@@ -352,3 +352,57 @@ legend{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--
   .rv{opacity:1;transform:none}
 }
 .nav.dark{background:rgba(28,40,38,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);padding-top:12px;padding-bottom:12px;box-shadow:0 1px 0 var(--linel)}
+
+/* APARELHOS · Danavox Barani */
+html,body{touch-action:pan-x pan-y}
+.devices{background:var(--cream);padding:clamp(90px,14vh,160px) 0;position:relative;overflow:hidden}
+.devices__head{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(24px,5vw,80px);align-items:end}
+.devices__head .lead{margin-bottom:22px}
+.formats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:clamp(40px,7vh,72px)}
+.format{background:var(--paper);border:1px solid var(--line);border-radius:28px;padding:26px 24px 28px;transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+.format:hover{transform:translateY(-6px);box-shadow:0 24px 50px -30px rgba(28,40,38,.35)}
+.format__art{aspect-ratio:1;border-radius:20px;background:radial-gradient(70% 70% at 50% 45%,#e6efeb 0%,var(--cream) 70%);display:grid;place-items:center;margin-bottom:22px;position:relative;overflow:hidden}
+.format__art::after{content:"";position:absolute;inset:18%;border-radius:50%;border:1px solid rgba(119,156,148,.35);animation:ring 3.2s var(--ease) infinite}
+@keyframes ring{0%{transform:scale(.7);opacity:0}40%{opacity:1}100%{transform:scale(1.35);opacity:0}}
+.format__art svg{width:72%;height:auto;position:relative;z-index:1}
+.d-body{fill:var(--ink2);stroke:none}
+.d-wire{fill:none;stroke:var(--sage);stroke-width:3;stroke-linecap:round}
+.d-dome{fill:var(--mist)}
+.d-face{fill:none;stroke:var(--mist);stroke-width:2}
+.d-dot{fill:var(--glow)}
+.format__tag{font:500 11px/1 var(--body);letter-spacing:.18em;text-transform:uppercase;color:var(--sage)}
+.format h3{font:400 26px/1.1 var(--disp);margin:10px 0}
+.format p{font-size:15.5px;color:#3d4f4b}
+.perks{margin-top:clamp(70px,10vh,110px)}
+.perks__title{font:300 clamp(28px,3.2vw,42px)/1.1 var(--disp);letter-spacing:-.01em;margin-bottom:28px}
+.perks__grid{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line)}
+.perks__grid li{padding:26px 22px 30px 0;border-bottom:1px solid var(--line)}
+.perks__grid li:not(:nth-child(4n+1)){padding-left:22px;border-left:1px solid var(--line)}
+.perks__grid b{display:block;font:400 19px/1.2 var(--disp);margin-bottom:10px}
+.perks__grid b::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--teal);margin-right:10px;vertical-align:middle}
+.perks__grid span{font-size:15px;color:#4a5b57;display:block}
+.choose{margin-top:clamp(70px,10vh,110px);background:var(--ink);color:var(--cream);border-radius:32px;padding:clamp(30px,5vw,64px);display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,60px)}
+.choose .eyebrow{color:var(--glow)}
+.choose__title{font:300 clamp(26px,2.8vw,38px)/1.15 var(--disp);letter-spacing:-.01em;text-wrap:balance}
+.choose__steps{list-style:none;display:grid;gap:4px}
+.choose__steps li{display:grid;grid-template-columns:44px 1fr;padding:14px 0;border-bottom:1px solid var(--linel);color:rgba(244,241,234,.82)}
+.choose__steps span{font:300 14px var(--disp);color:var(--glow);letter-spacing:.1em;padding-top:3px}
+.choose__cta{grid-column:1/-1;display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.choose__cta .fine{margin:0;color:rgba(244,241,234,.45)}
+@media (max-width:1080px){
+  .devices__head{grid-template-columns:1fr}
+  .formats{grid-template-columns:repeat(2,1fr)}
+  .perks__grid{grid-template-columns:repeat(2,1fr)}
+  .perks__grid li:not(:nth-child(4n+1)){padding-left:0;border-left:0}
+  .perks__grid li:nth-child(2n){padding-left:22px;border-left:1px solid var(--line)}
+  .choose{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+  .formats{grid-template-columns:repeat(4,78vw);overflow-x:auto;scroll-snap-type:x mandatory;margin-left:calc(var(--pad)*-1);margin-right:calc(var(--pad)*-1);padding:0 var(--pad) 10px;scrollbar-width:none}
+  .formats::-webkit-scrollbar{display:none}
+  .format{scroll-snap-align:center}
+  .perks__grid{grid-template-columns:1fr}
+  .perks__grid li,.perks__grid li:nth-child(2n){padding:22px 0;border-left:0}
+  .choose{border-radius:24px}
+  .choose__cta .btn{width:100%;justify-content:center}
+}

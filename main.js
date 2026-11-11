@@ -197,7 +197,7 @@
   $$('video[data-auto]').forEach(v => vio.observe(v));
 
   /* ---------- reveal ---------- */
-  const rvEls = $$('.sim__intro, .sim__panel, .process__head, .sol, .reels .h2, .reel, .edu__media, .timeline li, .edu__note, .score, .book__copy, .book__form, .place__info, .solutions .h2, .solutions .lead');
+  const rvEls = $$('.devices__head > *, .format, .perks__title, .perks__grid li, .choose__copy, .choose__steps li, .choose__cta, .sim__intro, .sim__panel, .process__head, .sol, .reels .h2, .reel, .edu__media, .timeline li, .edu__note, .score, .book__copy, .book__form, .place__info, .solutions .h2, .solutions .lead');
   rvEls.forEach((el, i) => { el.classList.add('rv'); el.style.transitionDelay = (i % 5) * 70 + 'ms'; });
   const rio = new IntersectionObserver(es => es.forEach(e => {
     if (e.isIntersecting) { e.target.classList.add('in'); rio.unobserve(e.target); }
@@ -377,9 +377,9 @@
     e.preventDefault();
     window.open(`https://wa.me/${WA}?text=${encodeURIComponent(buildMsg())}`, '_blank', 'noopener');
   });
-  $$('[data-pre="musico"]').forEach(a => a.addEventListener('click', () => {
-    const b = $('[data-key="musico"]', form); if (b && !b.classList.contains('is-on')) { b.classList.add('is-on'); buildMsg(); }
-  }));
+  ['musico', 'barani'].forEach(k => $$('[data-pre="' + k + '"]').forEach(a => a.addEventListener('click', () => {
+    const b = $('[data-key="' + k + '"]', form); if (b && !b.classList.contains('is-on')) { b.classList.add('is-on'); buildMsg(); }
+  })));
   waFloat.addEventListener('click', e => {
     // floating button goes straight to WhatsApp on mobile, to the form on desktop
     if (isMobile()) { e.preventDefault(); window.open(`https://wa.me/${WA}?text=${encodeURIComponent('Olá, Danilo! Gostaria de agendar uma avaliação.')}`, '_blank', 'noopener'); }
@@ -414,3 +414,7 @@
   };
   status(); setInterval(status, 60000);
 })();
+
+/* sem zoom no mobile (iOS ignora user-scalable=no) */
+['gesturestart', 'gesturechange', 'gestureend'].forEach(t => document.addEventListener(t, e => e.preventDefault(), { passive: false }));
+(() => { let last = 0; document.addEventListener('touchend', e => { const n = Date.now(); if (n - last < 300) e.preventDefault(); last = n; }, { passive: false }); })();

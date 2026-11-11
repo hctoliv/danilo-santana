@@ -417,3 +417,12 @@
 /* sem zoom no mobile (iOS ignora user-scalable=no) */
 ['gesturestart', 'gesturechange', 'gestureend'].forEach(t => document.addEventListener(t, e => e.preventDefault(), { passive: false }));
 (() => { let last = 0; document.addEventListener('touchend', e => { const n = Date.now(); if (n - last < 300) e.preventDefault(); last = n; }, { passive: false }); })();
+
+/* capas dos vídeos carregam só quando a seção se aproxima */
+(() => {
+  const lazyPosters = [...document.querySelectorAll('video[data-poster]')];
+  if ('IntersectionObserver' in window) {
+    const pio = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.poster = e.target.dataset.poster; pio.unobserve(e.target); } }), { rootMargin: '600px 0px' });
+    lazyPosters.forEach(v => pio.observe(v));
+  } else lazyPosters.forEach(v => v.poster = v.dataset.poster);
+})();

@@ -16,11 +16,10 @@
 <meta property="og:site_name" content="Danilo Santana | Aparelhos Auditivos">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="img/mark-dark.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=7">
-<link rel="stylesheet" href="aparelho.css?v=8">
+<link rel="preload" as="image" href="img/danilo.webp" imagesrcset="img/danilo-480.webp 480w, img/danilo-760.webp 760w, img/danilo.webp 1200w" imagesizes="(max-width:760px) 420px, 600px" fetchpriority="high">
+<link rel="preload" href="fonts/jost-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css?v=10">
+<link rel="stylesheet" href="aparelho.css?v=10">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"MedicalBusiness","name":"Fonoaudiólogo Danilo Santana","medicalSpecialty":"Audiology","image":"img/danilo.webp","telephone":"+55-11-97105-4861","address":{"@type":"PostalAddress","streetAddress":"Alameda Jaú, 72, Conj. 23","addressLocality":"São Paulo","addressRegion":"SP","postalCode":"01420-000","addressCountry":"BR"},"geo":{"@type":"GeoCoordinates","latitude":-23.5687659,"longitude":-46.6510542},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"12"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Friday"],"opens":"14:00","closes":"18:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Thursday"],"opens":"09:00","closes":"18:00"}],"sameAs":["https://www.instagram.com/fonodanilosantana/","https://www.facebook.com/fonodanilosantana"]}
 </script>
@@ -30,7 +29,7 @@
 <!-- INTRO: audiometria -->
 <div class="intro" id="intro" aria-hidden="true">
   <div class="intro__grid">
-    <img class="intro__mark" src="img/mark-light.png" alt="">
+    <img class="intro__mark" src="img/mark-light.webp" alt="">
     <div class="intro__freqs">
       <span>250</span><span>500</span><span>1k</span><span>2k</span><span>4k</span><span>8k</span>
     </div>
@@ -42,8 +41,8 @@
 
 <header class="nav" id="nav">
   <a class="nav__logo" href="#topo" aria-label="Danilo Santana, fonoaudiólogo">
-    <img class="logo-l" src="img/logo-light.png" alt="Danilo Santana fonoaudiólogo" width="870" height="307">
-    <img class="logo-d" src="img/logo-dark.png" alt="" width="870" height="307">
+    <img class="logo-l" src="img/logo-light.webp" alt="Danilo Santana fonoaudiólogo" width="420" height="148">
+    <img class="logo-d" src="img/logo-dark.webp" alt="" width="420" height="148">
   </a>
   <nav class="nav__links" id="menu">
     <a href="#aparelhos">Aparelhos</a>
@@ -67,7 +66,7 @@
     <canvas class="hero__rings" id="rings"></canvas>
     <div class="hero__word" aria-hidden="true"><span>OUVIR</span></div>
     <div class="hero__figure" id="figure">
-      <img src="img/danilo.webp" alt="Danilo Santana, fonoaudiólogo, de jaleco no consultório" width="1200" height="1795" fetchpriority="high">
+      <img src="img/danilo.webp" srcset="img/danilo-480.webp 480w, img/danilo-760.webp 760w, img/danilo.webp 1200w" sizes="(max-width:760px) 420px, 600px" alt="Danilo Santana, especialista em aparelhos auditivos, de jaleco no consultório" width="1200" height="1795" fetchpriority="high">
     </div>
     <div class="hero__copy">
       <p class="eyebrow"><span class="dot"></span> Fonoaudiólogo · Aparelhos auditivos</p>
@@ -112,7 +111,7 @@
     <div class="formats" id="formats">
       <article class="format">
         <div class="format__art">
-          <img src="img/boreal/minirie.png" alt="Aparelho auditivo Danavox Boreal miniRIE 60, prata" width="484" height="400" loading="lazy">
+          <img src="img/boreal/minirie.webp" alt="Aparelho auditivo Danavox Boreal miniRIE 60, prata" width="484" height="400" loading="lazy">
         </div>
         <span class="format__tag">miniRIE 60S · recarregável</span>
         <h3>Pequeno e recarregável</h3>
@@ -121,7 +120,7 @@
       </article>
       <article class="format">
         <div class="format__art">
-          <img src="img/boreal/rie.png" alt="Aparelho auditivo Danavox Boreal RIE 61, prata" width="484" height="400" loading="lazy">
+          <img src="img/boreal/rie.webp" alt="Aparelho auditivo Danavox Boreal RIE 61, prata" width="484" height="400" loading="lazy">
         </div>
         <span class="format__tag">RIE 61 · RIE 62</span>
         <h3>Receptor no canal</h3>
@@ -130,7 +129,7 @@
       </article>
       <article class="format">
         <div class="format__art">
-          <img src="img/boreal/bte.png" alt="Aparelho auditivo Danavox Boreal BTE 77, prata" width="484" height="400" loading="lazy">
+          <img src="img/boreal/bte.webp" alt="Aparelho auditivo Danavox Boreal BTE 77, prata" width="484" height="400" loading="lazy">
         </div>
         <span class="format__tag">BTE · Power BTE</span>
         <h3>Atrás da orelha</h3>
@@ -139,7 +138,7 @@
       </article>
       <article class="format">
         <div class="format__art">
-          <img src="img/boreal/cic.png" alt="Aparelho auditivo Danavox CIC sob medida, anthracite" width="448" height="400" loading="lazy">
+          <img src="img/boreal/cic.webp" alt="Aparelho auditivo Danavox CIC sob medida, anthracite" width="448" height="400" loading="lazy">
         </div>
         <span class="format__tag">CIC · sob medida</span>
         <h3>Quase invisível</h3>
@@ -159,7 +158,7 @@
         <li><b>Chuva, suor e poeira</b><span>Modelos com certificação IP68, resistentes a água e poeira, e com menos manutenção. Pode usar na caminhada e no dia a dia sem medo.</span></li>
         <li><b>Ajustes no consultório</b><span>Pelo app BeMore você controla volume e programas do aparelho auditivo. As regulagens finas são feitas pessoalmente no consultório, com o Danilo.</span></li>
         <li><b>TV e reuniões</b><span>Acessórios com Auracast: o TV-Streamer+ leva o som da TV direto para o aparelho, e o Multi-Mic+ aproxima a voz de quem fala e corta o ruído em volta.</span></li>
-        <li><b>Discreto do seu jeito</b><span>Oito cores para os modelos atrás da orelha e seis para os sob medida, pensadas para combinar com o tom do cabelo e da pele.</span><img class="perks__colors" src="img/boreal/cores.png" alt="Cartela de cores da linha Danavox Boreal" width="720" height="240" loading="lazy"></li>
+        <li><b>Discreto do seu jeito</b><span>Oito cores para os modelos atrás da orelha e seis para os sob medida, pensadas para combinar com o tom do cabelo e da pele.</span><img class="perks__colors" src="img/boreal/cores.webp" alt="Cartela de cores da linha Danavox Boreal" width="720" height="240" loading="lazy"></li>
       </ul>
     </div>
 
@@ -236,10 +235,10 @@
   <div class="process__media">
     <div class="process__sticky">
       <div class="process__frame">
-        <img class="process__img on" src="img/etapa-avaliacao.jpg" alt="Avaliação auditiva individual antes de indicar o aparelho auditivo" width="900" height="800">
-        <img class="process__img" src="img/etapa-indicacao.jpg" alt="Aparelho auditivo recarregável no estojo carregador, mostrado na indicação" width="900" height="800" loading="lazy">
-        <img class="process__img" src="img/etapa-adaptacao.jpg" alt="Pessoas conversando à mesa durante o teste do aparelho auditivo no dia a dia" width="900" height="800" loading="lazy">
-        <img class="process__img" src="img/etapa-acompanhamento.jpg" alt="Mãe e filha abraçadas, com o aparelho auditivo já fazendo parte da vida" width="900" height="800" loading="lazy">
+        <img class="process__img on" src="img/etapa-avaliacao.webp" alt="Avaliação auditiva individual antes de indicar o aparelho auditivo" width="900" height="800" loading="lazy">
+        <img class="process__img" src="img/etapa-indicacao.webp" alt="Aparelho auditivo recarregável no estojo carregador, mostrado na indicação" width="900" height="800" loading="lazy">
+        <img class="process__img" src="img/etapa-adaptacao.webp" alt="Pessoas conversando à mesa durante o teste do aparelho auditivo no dia a dia" width="900" height="800" loading="lazy">
+        <img class="process__img" src="img/etapa-acompanhamento.webp" alt="Mãe e filha abraçadas, com o aparelho auditivo já fazendo parte da vida" width="900" height="800" loading="lazy">
         <div class="process__ring"></div>
       </div>
       <div class="process__counter"><b id="stepNum">01</b><span>/04</span></div>
@@ -255,28 +254,28 @@
       <h3>Avaliação completa e minuciosa</h3>
       <p>Audiometria e conversa sem pressa. Perda auditiva se entende pela rotina, pelo ambiente, pela expectativa e pelo comportamento de cada pessoa. Cada detalhe influencia no resultado.</p>
       <p class="step__quote">"Uma avaliação superficial quase sempre leva a uma solução superficial."</p>
-      <img class="step__img" src="img/etapa-avaliacao.jpg" alt="" width="900" height="800" loading="lazy">
+      <img class="step__img" src="img/etapa-avaliacao.webp" alt="" width="900" height="800" loading="lazy">
     </article>
     <article class="step" data-step="2">
       <span class="step__n">02</span>
       <h3>Indicação com clareza</h3>
       <p>Quanto mais caro o aparelho auditivo, melhor? Na prática, não funciona assim. Cada tipo de perda exige uma abordagem diferente, e nem sempre o mais avançado é o mais adequado.</p>
       <p class="step__quote">"A decisão deixa de ser emocional e passa a ser estratégica."</p>
-      <img class="step__img" src="img/etapa-indicacao.jpg" alt="" width="900" height="800" loading="lazy">
+      <img class="step__img" src="img/etapa-indicacao.webp" alt="" width="900" height="800" loading="lazy">
     </article>
     <article class="step" data-step="3">
       <span class="step__n">03</span>
       <h3>Adaptação progressiva</h3>
       <p>Muita gente abandona o aparelho auditivo nos primeiros dias. Não é falta de disciplina, é erro no processo. O cérebro precisa reaprender a ouvir, e isso acontece aos poucos, com teste no dia a dia.</p>
       <p class="step__quote">"Adaptação não é imediata. É progressiva."</p>
-      <img class="step__img" src="img/etapa-adaptacao.jpg" alt="" width="900" height="800" loading="lazy">
+      <img class="step__img" src="img/etapa-adaptacao.webp" alt="" width="900" height="800" loading="lazy">
     </article>
     <article class="step" data-step="4">
       <span class="step__n">04</span>
       <h3>Ajustes e acompanhamento</h3>
       <p>Regulagens finas, retornos e orientação até o aparelho de audição deixar de ser um acessório e passar a fazer parte da sua vida.</p>
       <p class="step__quote">"Quando bem indicada e ajustada, a tecnologia passa a fazer parte da sua vida."</p>
-      <img class="step__img" src="img/etapa-acompanhamento.jpg" alt="" width="900" height="800" loading="lazy">
+      <img class="step__img" src="img/etapa-acompanhamento.webp" alt="" width="900" height="800" loading="lazy">
     </article>
   </div>
 </section>
@@ -327,11 +326,11 @@
     </header>
     <div class="musicians__track" id="track">
       <figure class="card">
-        <div class="card__img"><img src="img/sorocaba.jpg" alt="Danilo Santana, especialista em aparelhos auditivos, com o cantor Sorocaba" width="838" height="1000" loading="lazy"></div>
+        <div class="card__img"><img src="img/sorocaba.webp" alt="Danilo Santana, especialista em aparelhos auditivos, com o cantor Sorocaba" width="720" height="859" loading="lazy"></div>
         <figcaption><b>Sorocaba</b><span>Cantor e compositor, da dupla Fernando &amp; Sorocaba.</span></figcaption>
       </figure>
       <figure class="card card--wide">
-        <div class="card__img"><img src="img/ale-costa.jpg" alt="Danilo Santana, especialista em aparelhos auditivos, com Alê Costa, da Cacau Show" width="1000" height="958" loading="lazy"></div>
+        <div class="card__img"><img src="img/ale-costa.webp" alt="Danilo Santana, especialista em aparelhos auditivos, com Alê Costa, da Cacau Show" width="900" height="862" loading="lazy"></div>
         <figcaption><b>Alê Costa</b><span>Fundador da Cacau Show.</span></figcaption>
       </figure>
       <figure class="card">
@@ -365,23 +364,23 @@
     <h2 class="h2">Mitos sobre aparelho auditivo que fazem a pessoa adiar o tratamento.</h2>
     <div class="reels__row">
       <article class="reel" data-src="media/caro.mp4">
-        <div class="reel__phone"><video poster="media/caro.jpg" playsinline preload="none"></video><button class="reel__btn" aria-label="Assistir"><i class="play"></i></button></div>
+        <div class="reel__phone"><video data-poster="media/caro.jpg" playsinline preload="none"></video><button class="reel__btn" aria-label="Assistir"><i class="play"></i></button></div>
         <h3>"Quanto mais caro, melhor."</h3>
       </article>
       <article class="reel" data-src="media/tecnologia.mp4">
-        <div class="reel__phone"><video poster="media/tecnologia.jpg" playsinline preload="none"></video><button class="reel__btn" aria-label="Assistir"><i class="play"></i></button></div>
+        <div class="reel__phone"><video data-poster="media/tecnologia.jpg" playsinline preload="none"></video><button class="reel__btn" aria-label="Assistir"><i class="play"></i></button></div>
         <h3>"Aparelho é aquele grande e aparente."</h3>
       </article>
       <article class="reel" data-src="media/adaptacao.mp4">
-        <div class="reel__phone"><video poster="media/adaptacao.jpg" playsinline preload="none"></video><button class="reel__btn" aria-label="Assistir"><i class="play"></i></button></div>
+        <div class="reel__phone"><video data-poster="media/adaptacao.jpg" playsinline preload="none"></video><button class="reel__btn" aria-label="Assistir"><i class="play"></i></button></div>
         <h3>"Desisti, não me adaptei."</h3>
       </article>
       <article class="reel" data-src="media/cerebro.mp4">
-        <div class="reel__phone"><video poster="media/cerebro.jpg" playsinline preload="none"></video><button class="reel__btn" aria-label="Assistir"><i class="play"></i></button></div>
+        <div class="reel__phone"><video data-poster="media/cerebro.jpg" playsinline preload="none"></video><button class="reel__btn" aria-label="Assistir"><i class="play"></i></button></div>
         <h3>"É só escutar um pouco menos."</h3>
       </article>
       <article class="reel" data-src="media/avaliacao.mp4">
-        <div class="reel__phone"><video poster="media/avaliacao.jpg" playsinline preload="none"></video><button class="reel__btn" aria-label="Assistir"><i class="play"></i></button></div>
+        <div class="reel__phone"><video data-poster="media/avaliacao.jpg" playsinline preload="none"></video><button class="reel__btn" aria-label="Assistir"><i class="play"></i></button></div>
         <h3>"Resolve numa consulta rápida."</h3>
       </article>
     </div>
@@ -393,7 +392,7 @@
 <section class="edu" id="formacao">
   <div class="wrap edu__grid">
     <div class="edu__media">
-      <video src="media/santacasa.mp4" poster="media/santacasa.jpg" muted loop playsinline preload="none" data-auto></video>
+      <video src="media/santacasa.mp4" data-poster="media/santacasa.jpg" muted loop playsinline preload="none" data-auto></video>
       <p class="edu__cap">Oficina de pré-moldes com os alunos do 3º ano de Fonoaudiologia da Santa Casa. "Retornar à Santa Casa é sempre um momento especial."</p>
     </div>
     <div>
@@ -513,7 +512,7 @@
 </section>
 
 <footer class="foot">
-  <img class="foot__logo" src="img/logo-light.png" alt="Danilo Santana fonoaudiólogo" width="870" height="307" loading="lazy">
+  <img class="foot__logo" src="img/logo-light.webp" alt="Danilo Santana fonoaudiólogo" width="420" height="148" loading="lazy">
   <div class="foot__cols">
     <p>Fonoaudiólogo · CRFa 2-18375<br>Mestre em Saúde da Comunicação Humana (FCMSCSP)<br>Especialista em Audiologia (CFFa)</p>
     <p>Alameda Jaú, 72, Conj. 23<br>Jardim Paulista, São Paulo, SP</p>
@@ -528,6 +527,6 @@
   <span>Fale comigo</span>
 </a>
 
-<script src="main.js?v=8"></script>
+<script src="main.js?v=10" defer></script>
 </body>
 </html>

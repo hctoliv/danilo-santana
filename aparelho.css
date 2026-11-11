@@ -90,3 +90,11 @@
   .process__media{display:none}
   .step__img{display:block;width:100%;aspect-ratio:9/8;object-fit:cover;border-radius:50% 50% 22px 22px;margin-top:24px}
 }
+
+/* acessibilidade: contraste e áreas de toque */
+em{color:#527870}
+.fine:not(.fine--light),.sim__ticks button,.edu__cap,.timeline i,.score i,.crumb{color:#56655f}
+.fine--light{color:rgba(244,241,234,.68)}
+.choose__cta .fine{color:rgba(244,241,234,.68)}
+.foot__cols a{display:inline-block;padding:5px 0;margin:1px 0}
+.foot__cols p{line-height:1.9}

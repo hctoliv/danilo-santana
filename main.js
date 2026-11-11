@@ -381,10 +381,7 @@
   ['musico', 'boreal'].forEach(k => $$('[data-pre="' + k + '"]').forEach(a => a.addEventListener('click', () => {
     const b = $('[data-key="' + k + '"]', form); if (b && !b.classList.contains('is-on')) { b.classList.add('is-on'); buildMsg(); }
   })));
-  waFloat.addEventListener('click', e => {
-    // floating button goes straight to WhatsApp on mobile, to the form on desktop
-    if (isMobile()) { e.preventDefault(); window.open(`https://wa.me/${WA}?text=${encodeURIComponent('Olá, Danilo! Gostaria de agendar um teste com o aparelho auditivo Danavox Boreal.')}`, '_blank', 'noopener'); }
-  });
+  // botão flutuante "Fale comigo" vai direto para o WhatsApp (href no HTML)
 
   /* ---------- OPEN / CLOSED (horário de São Paulo) ---------- */
   const HOURS = { 1: [14, 18], 2: [9, 18], 3: null, 4: [9, 18], 5: [14, 18], 6: null, 0: null };

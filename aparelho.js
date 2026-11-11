@@ -37,9 +37,9 @@
   nome.addEventListener('input', msg);
   msg();
   form.addEventListener('submit', e => { e.preventDefault(); window.open(`https://wa.me/${WA}?text=${encodeURIComponent(msg())}`, '_blank', 'noopener'); });
-  $('.wa-float').addEventListener('click', e => {
-    if (isMobile()) { e.preventDefault(); window.open(`https://wa.me/${WA}?text=${encodeURIComponent(`Olá, Danilo! Vi no site o aparelho auditivo ${MODEL} e gostaria de agendar um teste.`)}`, '_blank', 'noopener'); }
-  });
+  const fl = $('.wa-float'), book = $('#agendar');
+  const tick = () => { const b = book.getBoundingClientRect(), vh = innerHeight; fl.classList.toggle('show', scrollY > vh * .5 && !(b.top < vh && b.bottom > 0)); };
+  addEventListener('scroll', tick, { passive: true }); tick();
 
   // revelação ao rolar
   const els = $$('.pd-for__card, .pd-not, .pd-perks li, .pd-specs__list div, .choose, .pd-faq__item, .book__copy, .book__form, .pd-other');

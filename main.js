@@ -364,7 +364,8 @@
     const quem = picked('quem')[0] || 'mim';
     const sinais = picked('sinais');
     const exame = picked('exame')[0];
-    let m = `Olá, Danilo! ${n ? 'Meu nome é ' + n + '. ' : ''}Gostaria de agendar uma avaliação ${quem === 'mim' ? 'para mim' : 'para um familiar'}.`;
+    const soMusico = sinais.length === 1 && /músico/.test(sinais[0]);
+    let m = `Olá, Danilo! ${n ? 'Meu nome é ' + n + '. ' : ''}${soMusico ? 'Gostaria de agendar um horário' : 'Gostaria de agendar um teste com o aparelho auditivo Danavox Boreal'} ${quem === 'mim' ? 'para mim' : 'para um familiar'}.`;
     if (sinais.length) m += `\n\nO que tenho percebido: ${sinais.join(', ')}.`;
     if (exame) m += `\nAudiometria: ${exame}.`;
     m += `\n\nQuais horários você tem disponíveis?`;
@@ -382,7 +383,7 @@
   })));
   waFloat.addEventListener('click', e => {
     // floating button goes straight to WhatsApp on mobile, to the form on desktop
-    if (isMobile()) { e.preventDefault(); window.open(`https://wa.me/${WA}?text=${encodeURIComponent('Olá, Danilo! Gostaria de agendar uma avaliação.')}`, '_blank', 'noopener'); }
+    if (isMobile()) { e.preventDefault(); window.open(`https://wa.me/${WA}?text=${encodeURIComponent('Olá, Danilo! Gostaria de agendar um teste com o aparelho auditivo Danavox Boreal.')}`, '_blank', 'noopener'); }
   });
 
   /* ---------- OPEN / CLOSED (horário de São Paulo) ---------- */
